@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Tell if an Egg is Bad - Complete Guide</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .method-card {
+            transition: all 0.3s ease;
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(31, 38, 135, 0.15);
+        }
+        .highlight {
+            position: relative;
+            display: inline-block;
+        }
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: rgba(234, 179, 8, 0.3);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-amber-600">
+                <i class="fas fa-egg mr-2"></i>Egg Freshness Guide
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#methods" class="text-gray-600 hover:text-amber-600 transition-colors">Methods</a>
+                <a href="#tips" class="text-gray-600 hover:text-amber-600 transition-colors">Tips</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobileMenuButton">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white shadow-md py-2 px-4" id="mobileMenu">
+        <a href="#methods" class="block py-2 text-gray-600 hover:text-amber-600">Methods</a>
+        <a href="#tips" class="block py-2 text-gray-600 hover:text-amber-600">Tips</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-12 md:py-20 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">How to Tell if an Egg is <span class="highlight">Bad</span></h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Learn simple and effective methods to check egg freshness at home</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pb-16">
+        <!-- Introduction -->
+        <section class="glass-card p-8 mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mr-4">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h2 class="text-2xl font-semibold">Why Check Egg Freshness?</h2>
+            </div>
+            <p class="text-gray-600 mb-4">Eggs can go bad over time, and consuming spoiled eggs may lead to food poisoning. Fresh eggs not only taste better but are also safer to eat. Here are four reliable methods to check if your eggs are still good.</p>
+        </section>
+
+        <!-- Methods Section -->
+        <section id="methods" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">4 Methods to Test Egg Freshness</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Method 1 -->
+                <div class="method-card glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mr-3">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-semibold">The Float Test</h3>
+                    </div>
+                    <img src="https://p3-search.byteimg.com/obj/labis/c2fcd10305ee3bdedbb24a8b160bde58" alt="Float test method" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-600 mb-4">Fill a bowl with cold water and gently place the egg in it:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Fresh egg:</strong> Sinks to bottom and lies flat</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                            <span><strong>Older but still good:</strong> Sinks but stands on one end</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong>Bad egg:</strong> Floats to the surface</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-500">This works because egg shells are porous and allow air to enter over time.</p>
+                </div>
+
+                <!-- Method 2 -->
+                <div class="method-card glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mr-3">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-semibold">The Shake Test</h3>
+                    </div>
+                    <img src="https://p3-search.byteimg.com/obj/labis/2990e8e494c7f29a1e9aca57c2922da3" alt="Shake test method" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-600 mb-4">Hold the egg close to your ear and shake it gently:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Fresh egg:</strong> No sound or very slight movement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                            <span><strong>Older but still good:</strong> Slight sloshing sound</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong>Bad egg:</strong> Distinct sloshing sound</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-500">As eggs age, the yolk and white shrink while the air cell expands.</p>
+                </div>
+
+                <!-- Method 3 -->
+                <div class="method-card glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mr-3">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-semibold">The Crack Test</h3>
+                    </div>
+                    <img src="https://p3-search.byteimg.com/obj/labis/256108b0e29c565724fa24976f4ee0c6" alt="Crack test method" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-600 mb-4">Crack the egg onto a flat plate and observe:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Fresh egg:</strong> Firm yolk, thick white that doesn't spread much</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                            <span><strong>Older but still good:</strong> Yolk flattens, white spreads more</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong>Bad egg:</strong> Unpleasant smell, discolored yolk or white</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-500">This is the most reliable method but requires breaking the egg.</p>
+                </div>
+
+                <!-- Method 4 -->
+                <div class="method-card glass-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mr-3">
+                            <span class="font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-semibold">The Candling Test</h3>
+                    </div>
+                    <img src="https://p3-search.byteimg.com/obj/labis/cd1f645c5ca518ed9c0a1b6c0f837023" alt="Candling test method" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-600 mb-4">Hold the egg against a bright light source in a dark room:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Fresh egg:</strong> Small air cell (less than 1/8 inch)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                            <span><strong>Older but still good:</strong> Larger air cell (up to 3/8 inch)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong>Bad egg:</strong> Very large air cell, dark spots, or cloudy appearance</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-500">This method is traditionally used by egg producers to check quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="glass-card p-8">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 mr-4">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h2 class="text-2xl font-semibold">Egg Storage Tips</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-amber-50 rounded-xl p-4">
+                    <div class="text-amber-600 text-lg mb-2"><i class="fas fa-temperature-low mr-2"></i>Proper Storage</div>
+                    <p class="text-gray-700">Store eggs in their original carton in the coldest part of the refrigerator (not the door). The ideal temperature is below 40°F (4°C).</p>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl p-4">
+                    <div class="text-amber-600 text-lg mb-2"><i class="fas fa-clock mr-2"></i>Shelf Life</div>
+                    <p class="text-gray-700">Fresh eggs can last 4-5 weeks in the refrigerator. Hard-boiled eggs should be eaten within 1 week.</p>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl p-4">
+                    <div class="text-amber-600 text-lg mb-2"><i class="fas fa-egg mr-2"></i>Freshness Indicators</div>
+                    <p class="text-gray-700">Check the "pack date" or "expiration date" on the carton. In the US, eggs are graded AA, A, or B based on quality.</p>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl p-4">
+                    <div class="text-amber-600 text-lg mb-2"><i class="fas fa-utensils mr-2"></i>Cooking Tips</div>
+                    <p class="text-gray-700">Older eggs are actually better for hard-boiling as they peel more easily. Fresh eggs are best for poaching and frying.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p class="mt-2 text-sm">© 2025 Egg Freshness Guide. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            
+            // Change icon
+            const icon = this.querySelector('i');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    document.querySelector('#mobileMenuButton i').classList.remove('fa-times');
+                    document.querySelector('#mobileMenuButton i').classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
